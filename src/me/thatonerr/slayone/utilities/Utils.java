@@ -5,8 +5,8 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import static java.awt.event.MouseEvent.*;
 
@@ -25,7 +25,8 @@ public class Utils {
     public static String getTextFileResource(String filePath) {
         StringBuilder builder = new StringBuilder();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("resources" + filePath));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(Utils.class.getResourceAsStream(filePath)));
+//            BufferedReader reader = new BufferedReader(new FileReader("resources" + filePath));
             String line;
             while ((line = reader.readLine()) != null) {
                 builder.append(line + "\n");
