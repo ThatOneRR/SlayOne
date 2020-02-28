@@ -11,7 +11,7 @@ First time doing github stuff so please go easy ;w;
 That is a *great* question. Java's mildly annoying point is that everything compiles as a runnable .jar file. There's a quick and dirty way to compile the jar file though:
 1. Zip up the following contents:
   - 'me' folder (direct child of src)
-  - All the contents of the 'resources' folder (namely font, levels and sprites fiolders)
+  - All the contents of the 'resources' folder (namely font, levels and sprites folders)
   - 'META-INF' folder (direct child of src)
 2. Rename the zip file to SlayOne.jar
 
